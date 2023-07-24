@@ -1,3 +1,5 @@
+create database person_details;
+
 create table users(
     id int not null AUTO_INCREMENT,
     first_name varchar(255),
