@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Users total history</h1>
+<table border-collapse = 'collapse'>
+    <?php foreach($datas as $data):?>
+    <tr>
+        <td><?php echo $data->id ?></td>
+        <td><?php echo $data->first_name ?></td>
+        <td><?php echo $data->last_name ?></td>
+        <td><?php echo $data->email ?></td>
+        <td><?php echo $data->password ?></td>
+        <td><?php echo $data->age ?></td>
+        <td><?php echo $data->Gender ?></td>
+        <td>
+            <form action="delete.php" method="post">
+                <input hidden name="delete" value="<?php echo $data->id ?>">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+        <td>
+            <form action="edit.php" method="post">
+                <input hidden name="edit" value="<?php echo $data->id ?>">
+                <button type="submit">Edit</button>
+            </form>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+<a href="index.html">Back to form page</a>
+<a href="home.html">Back to home page</a>
+</body>
+</html>

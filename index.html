@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Bala form task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="log">Users details</h1>
+    <form action="insert.php" method="post" class="loginpage">
+        <div class="login">
+            <label>FirstName:</label>
+            <input type="text" name="firstName" placeholder="Enter your firstName">
+        </div>
+        <div class="login">
+            <label>LastName:</label>
+            <input type="text" name="lastName" placeholder="Enter your lastName">
+        </div>
+        <div class="login">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+        </div>
+         <div class="login">
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password">
+        </div>
+        <div class="login">
+            <label>Age:</label>
+            <input type="number" name="age" placeholder="Enter your age">
+        </div>
+        <div class="login">
+            <label>Address:</label>
+            <input type="text" name="address" placeholder="Enter your address">
+        </div>
+        <div class="login">
+            <label>Gender:</label>
+            <input type="radio" name="operator" value="male" class="gender">Male
+            <input type="radio" name="operator" value="female" class="gender">Female
+            <input type="radio" name="operator" value="other" class="gender">Others
+        </div>
+        <button><a href="home.html" class="backToHome">Back to home</a></button>
+        <button type="submit" name="submit" class="sub">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

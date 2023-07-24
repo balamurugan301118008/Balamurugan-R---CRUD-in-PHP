@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}a{
+    text-decoration: none;
+}
+.login > input:not(.gender) {
+    height: 30px;
+    width: 226px;
+    /* margin: 0 auto; */
+    display: flex;
+}
+.home>a{
+    text-decoration: none;
+    height: 61px;
+    width: 17%;
+    background-color: oldlace;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 30px;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-top: 102px;
+}
+h1.log {
+    text-align: center;
+    padding-top: 9px;
+    color: teal;
+}
+h2{
+    background-color: peachpuff;
+    height: 49px;
+    width: 80%;
+    margin: 61px 0px 0px 130px;
+    text-align: center;
+    padding-top: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: -2px -1px 5px 0px peachpuff;
+}
+.container {
+    border: 1px solid grey;
+    height: 580px;
+    width: 40%;
+    margin: 10px auto;
+    background-color: snow;
+    border-radius: 3px;
+    border-style: none;
+}
+.login {
+    margin: 16px 0px 20px 109px;
+}
+button.sub{
+    text-align: center;
+    margin: 5px 52px;
+    color: black;
+    height: 33px;
+    width: 22%;
+    font-size: 17px;
+    background-color: skyblue;
+    border-style: none;
+    border-radius: 3px;
+}
+a.backToHome {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    height: 20px;
+    width: 98px;
+}
